@@ -1,6 +1,6 @@
 // import logo from "../assets/Logo.jpg";
 import { TiDocumentText } from "react-icons/ti";
-import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { useState } from "react";
 const Resume = "Resume.pdf";
 
@@ -54,6 +54,18 @@ const Navbar = () => {
           </a>
           <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             Twitter
+          </span>
+        </div>
+        <div className="text-gray-900 hover:text-white relative group">
+          <a
+            href="https://wa.me/8476846209"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp size={28} />
+          </a>
+          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            WhatsApp
           </span>
         </div>
       </div>

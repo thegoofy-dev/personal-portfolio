@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
     title: "College Chatbot",
     image: project1,
     description: "An intelligent chatbot application using Natural Language Processing (NLP) to handle college-related queries and information. Features include intent recognition, contextual responses, and seamless integration with college database.",
-    technologies: ["React", "Node.js", "OpenAI API", "NLP"],
+    technologies: ["OpenAI API", "NLP", "IBM Cloud"],
     link: "https://collegechatbot.tiiny.site/"
   },
   {
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
     title: "MERN Chat Application",
     image: project3,
     description: "Real-time chat application with user authentication and group chat features.",
-    technologies: ["MongoDB", "Express", "React", "Node.js"],
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
     link: "https://igluz-chatapp.onrender.com/"
   },
   {
@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     image: project4,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["React", "TailwindCSS", "Framer Motion", "TypeScript"],
   },
 ];
 

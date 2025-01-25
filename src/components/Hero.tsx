@@ -54,7 +54,11 @@ const Hero: React.FC = () => {
               aria-level={2}
               className="bg-gradient-to-r from-orange-100 via-orange-200 to-orange-100 bg-clip-text text-4xl tracking-tight text-transparent"
             >
-              Full Stack Developer & Software Engineer
+              Full Stack Developer{" "}
+              <span className="bg-gradient-to-r from-orange-300 via-orange-200 to-orange-300 bg-clip-text text-4xl tracking-tight text-transparent">
+                {" "}
+                & Programmer
+              </span>
             </motion.span>
 
             <motion.p

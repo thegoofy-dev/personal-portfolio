@@ -1,16 +1,34 @@
-// import logo from "../assets/Logo.jpg";
+// import logo from "../assets/Logo.png";
 import { TiDocumentText } from "react-icons/ti";
 import { FaLinkedin, FaGithub, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { useState } from "react";
 const Resume = "Resume.pdf";
 
-const Navbar = () => {
-  const [isResumeOpen, setIsResumeOpen] = useState(false);
+// Define props type for social link component
+interface SocialLinkProps {
+  href: string;
+  Icon: React.ElementType;
+  label: string;
+}
+
+const SocialLink: React.FC<SocialLinkProps> = ({ href, Icon, label }) => (
+  <div className="text-gray-900 hover:text-white relative group">
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <Icon size={28} />
+    </a>
+    <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      {label}
+    </span>
+  </div>
+);
+
+const Navbar: React.FC = () => {
+  const [isResumeOpen, setIsResumeOpen] = useState<boolean>(false);
 
   return (
-    <nav className="flex justify-between items-center w-full ">
+    <nav className="flex justify-between items-center w-full">
       <div className="flex flex-shrink-0 items-center">
-        {/*Logo*/}
+        {/* Kr's Logo */}
         {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
       </div>
       <div className="m-8 flex items-center gap-5 pr-10 text-2xl">
@@ -20,54 +38,26 @@ const Navbar = () => {
             Resume
           </span>
         </div>
-        <div className="text-gray-900 hover:text-white relative group">
-          <a
-            href="https://www.linkedin.com/in/thegoofy-dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaLinkedin size={28} />
-          </a>
-          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            LinkedIn
-          </span>
-        </div>
-        <div className="text-gray-900 hover:text-white relative group">
-          <a
-            href="https://github.com/thegoofy-dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithub size={28} />
-          </a>
-          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            GitHub
-          </span>
-        </div>
-        <div className="text-gray-900 hover:text-white relative group">
-          <a
-            href="https://x.com/thegoofyy_guy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaXTwitter size={28} />
-          </a>
-          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            Twitter
-          </span>
-        </div>
-        <div className="text-gray-900 hover:text-white relative group">
-          <a
-            href="https://wa.me/8476846209"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaWhatsapp size={28} />
-          </a>
-          <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            WhatsApp
-          </span>
-        </div>
+        <SocialLink
+          href="https://www.linkedin.com/in/thegoofy-dev/"
+          Icon={FaLinkedin}
+          label="LinkedIn"
+        />
+        <SocialLink
+          href="https://wa.me/8476846209"
+          Icon={FaWhatsapp}
+          label="WhatsApp"
+        />
+        <SocialLink
+          href="https://github.com/thegoofy-dev"
+          Icon={FaGithub}
+          label="GitHub"
+        />
+        <SocialLink
+          href="https://x.com/thegoofyy_guy"
+          Icon={FaXTwitter}
+          label="Twitter"
+        />
       </div>
 
       {/* Resume Modal */}

@@ -1,12 +1,20 @@
 {
-  "files": [],
-  "references": [
-    // References the application-specific TypeScript configuration.
-    { "path": "./tsconfig.app.json" },
-    
-    // References the Node.js-specific TypeScript configuration.
-    { "path": "./tsconfig.node.json" }
-  ],
-  // Specifies the root files and directories to be included in the compilation.
-  "include": ["src"]
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

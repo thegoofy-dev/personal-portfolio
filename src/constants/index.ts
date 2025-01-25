@@ -55,3 +55,9 @@ export const PROJECTS = [
         technologies: ["HTML", "CSS", "React", "Bootstrap"],
     },
 ];
+
+export const CONTACT = {
+    address: "Jaspur, Udham Singh Nagar, Uttarakhand(244712), India",
+    phoneNo: "+91 8476846209 ",
+    email: "pankajtyagi4126@gmail.com",
+  };

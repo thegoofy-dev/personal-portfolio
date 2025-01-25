@@ -1,7 +1,8 @@
-import logo from "../assets/Logo.jpg";
+// import logo from "../assets/Logo.jpg";
 import { TiDocumentText } from "react-icons/ti";
 import { FaLinkedin, FaGithub, FaXTwitter } from "react-icons/fa6";
 import { useState } from "react";
+const Resume = "Resume.pdf";
 
 const Navbar = () => {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center w-full ">
       <div className="flex flex-shrink-0 items-center">
         {/*Logo*/}
-        <img className="mx-2 w-10" src={logo} alt="logo" />
+        {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
       </div>
       <div className="m-8 flex items-center gap-5 pr-10 text-2xl">
         <div className="text-gray-900 hover:text-white relative group">
@@ -68,7 +69,7 @@ const Navbar = () => {
               ✕
             </button>
             <iframe
-              src="/Pankaj Tyagi [Resume].pdf"
+              src={Resume}
               title="Resume"
               className="w-full h-full"
               style={{ border: "none" }}

@@ -80,5 +80,5 @@ export const PROJECTS: Project[] = [
 export const CONTACT: Contact = {
   address: "Jaspur, Udham Singh Nagar, Uttarakhand(244712), India",
   phoneNo: "+91 8476846209 ",
-  email: "sujaltyagi7788@gmail.com",
+  email: "pankajtyagi1601@gmail.com",
 };

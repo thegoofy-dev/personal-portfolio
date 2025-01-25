@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+          <div className="flex justify-center -mt-8">
             <motion.img
               variants={imageVariants}
               initial="hidden"
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
               whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
               src={profilePic}
               alt="Pankaj Tyagi - Full Stack Developer"
-              className="w-full h-full object-cover rounded-lg shadow-lg"
+              className="w-3/4 h-3/4 object-cover rounded-lg shadow-lg" // Changed from w-full h-full to w-3/4 h-3/4
               loading="eager"
             />
           </div>

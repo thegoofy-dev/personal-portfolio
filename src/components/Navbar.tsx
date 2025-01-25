@@ -1,7 +1,7 @@
-// import logo from "../assets/Logo.png";
 import { TiDocumentText } from "react-icons/ti";
-import { FaLinkedin, FaGithub, FaXTwitter, FaWhatsapp } from "react-icons/fa6";
+import { FaLinkedin, FaGithub, FaDiscord, FaWhatsapp } from "react-icons/fa6";
 import { useState } from "react";
+import { motion } from "framer-motion"; // Add this import at the top
 const Resume = "Resume.pdf";
 
 // Define props type for social link component
@@ -12,14 +12,20 @@ interface SocialLinkProps {
 }
 
 const SocialLink: React.FC<SocialLinkProps> = ({ href, Icon, label }) => (
-  <div className="text-gray-900 hover:text-white relative group">
+  <motion.div 
+    className="text-gray-900 hover:text-white relative group"
+    whileHover={{ 
+      rotate: [0, -10, 10, -10, 0],
+      transition: { duration: 0.5 }
+    }}
+  >
     <a href={href} target="_blank" rel="noopener noreferrer">
       <Icon size={28} />
     </a>
     <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
       {label}
     </span>
-  </div>
+  </motion.div>
 );
 
 const Navbar: React.FC = () => {
@@ -28,7 +34,7 @@ const Navbar: React.FC = () => {
   return (
     <nav className="flex justify-between items-center w-full">
       <div className="flex flex-shrink-0 items-center">
-        {/* Kr's Logo */}
+        {/*Logo */}
         {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
       </div>
       <div className="m-8 flex items-center gap-5 pr-10 text-2xl">
@@ -54,9 +60,9 @@ const Navbar: React.FC = () => {
           label="GitHub"
         />
         <SocialLink
-          href="https://x.com/thegoofyy_guy"
-          Icon={FaXTwitter}
-          label="Twitter"
+          href="https://discord.gg/SGk9PVzz"
+          Icon={FaDiscord}
+          label="Discord"
         />
       </div>
 

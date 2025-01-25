@@ -1,7 +1,12 @@
 {
   "files": [],
   "references": [
+    // References the application-specific TypeScript configuration.
     { "path": "./tsconfig.app.json" },
+    
+    // References the Node.js-specific TypeScript configuration.
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  // Specifies the root files and directories to be included in the compilation.
+  "include": ["src"]
 }

@@ -63,16 +63,18 @@ const Projects = () => {
                 )}
               </h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
-              {project.technologies.map((tech, techIndex) => (
-                <motion.span
-                  key={techIndex}
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, techIndex) => (
+                  <motion.span
+                    key={techIndex}
                   className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-orange-200"
                   whileHover={{ scale: 1.1, backgroundColor: "#1a1a1a" }}
                   transition={{ type: "spring", stiffness: 400 }}
                 >
                   {tech}
-                </motion.span>
-              ))}
+                  </motion.span>
+                ))}
+              </div>
             </motion.div>
           </motion.div>
         ))}

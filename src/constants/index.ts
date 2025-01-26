@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
     title: "MERN Chat Application",
     image: project3,
     description: "Real-time chat application with user authentication and group chat features.",
-    technologies: ["MongoDB", "Express", "React", "Node.js", "Socket.io"],
+    technologies: ["MERN", "JWT", "AuthO", "Socket.io", "Redux"],
     link: "https://igluz-chatapp.onrender.com/"
   },
   {

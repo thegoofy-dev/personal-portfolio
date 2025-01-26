@@ -33,16 +33,16 @@ const iconsVariants = (duration: number) => ({
 });
 
 const TECH_ICONS: TechIconProps[] = [
-  { Icon: RiReactjsLine, color: "#61DAFB", label: "React", duration: 2.5 },
-  { Icon: SiNextdotjs, color: "#ffffff", label: "Next.js", duration: 3 },
-  { Icon: SiTypescript, color: "#3178C6", label: "TypeScript", duration: 5 },
-  { Icon: SiGit, color: "#F14E32", label: "Git", duration: 7 },
-  { Icon: SiMongodb, color: "#00ED64", label: "MongoDB", duration: 9 },
-  { Icon: SiTailwindcss, color: "#06B6D4", label: "Tailwind CSS", duration: 11 },
-  { Icon: FaNodeJs, color: "#339933", label: "Node.js", duration: 13 },
-  { Icon: SiDocker, color: "#2496ED", label: "Docker", duration: 15 },
-  { Icon: SiMysql, color: "#4479A1", label: "MySQL", duration: 17 },
-  { Icon: FaJava, color: "#007396", label: "Java", duration: 19 },
+  { Icon: RiReactjsLine, color: "#61DAFB", label: "React", duration: 2 },
+  { Icon: SiNextdotjs, color: "#ffffff", label: "Next.js", duration: 2.3 },
+  { Icon: SiTypescript, color: "#3178C6", label: "TypeScript", duration: 2.6 },
+  { Icon: SiGit, color: "#F14E32", label: "Git", duration: 2.9 },
+  { Icon: SiMongodb, color: "#00ED64", label: "MongoDB", duration: 3.2 },
+  { Icon: SiTailwindcss, color: "#06B6D4", label: "Tailwind CSS", duration: 3.5 },
+  { Icon: FaNodeJs, color: "#339933", label: "Node.js", duration: 3.8 },
+  { Icon: SiDocker, color: "#2496ED", label: "Docker", duration: 4.1 },
+  { Icon: SiMysql, color: "#4479A1", label: "MySQL", duration: 4.4 },
+  { Icon: FaJava, color: "#007396", label: "Java", duration: 4.7 },
 ];
 
 const TechIcon: React.FC<TechIconProps> = ({ Icon, color, label, duration }) => (

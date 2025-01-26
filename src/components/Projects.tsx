@@ -49,7 +49,14 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.3 }}
             >
               <h6 className="mb-2 font-semibold">
-                {project.link ? (
+                {project.link === "#" ? (
+                  <button
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className="hover:text-orange-300 transition-colors duration-300"
+                  >
+                    {project.title} ↗
+                  </button>
+                ) : project.link ? (
                   <a
                     href={project.link}
                     target="_blank"

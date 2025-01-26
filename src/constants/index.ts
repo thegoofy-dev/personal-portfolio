@@ -59,7 +59,6 @@ export const PROJECTS: Project[] = [
     image: project2,
     description: "Computer vision system for detecting and tracking vehicles using OpenCV.",
     technologies: ["Python", "OpenCV", "Machine Learning"],
-    link: "https://github.com/thegoofy-dev/OpenCV_car_detection"
   },
   {
     title: "MERN Chat Application",
@@ -74,6 +73,7 @@ export const PROJECTS: Project[] = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["React", "TailwindCSS", "Framer Motion", "TypeScript"],
+    link: "#"
   },
 ];
 

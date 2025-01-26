@@ -40,9 +40,9 @@ const About: React.FC = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex justify-center lg:justify-start"
+            className="flex justify-center px-4 lg:px-0 lg:justify-start"
           >
-            <p className="text-gray-400 my-2 max-w-xl py-16 font-tight tracking-tighter">
+            <p className="text-gray-400 my-2 max-w-xl py-16 font-tight tracking-tighter text-center lg:text-left">
               {ABOUT_TEXT}
             </p>
           </motion.div>

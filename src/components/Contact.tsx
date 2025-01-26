@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
           viewport={{ once: true }}
-          className="my-4"
+          className="my-4 text-center"
         >
           {contactInfo.address}
         </motion.p>

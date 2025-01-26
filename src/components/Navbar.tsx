@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
         {/*Logo */}
         {/* <img className="mx-2 w-10" src={logo} alt="logo" /> */}
       </div>
-      <div className="m-8 flex items-center gap-5 pr-10 text-2xl">
+      <div className="flex items-center justify-center gap-5 p-4 text-2xl sm:m-8 mx-auto">
         <div className="text-gray-900 hover:text-white relative group">
           <TiDocumentText size={32} onClick={() => setIsResumeOpen(true)} />
           <span className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300">
